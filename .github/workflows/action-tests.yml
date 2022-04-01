@@ -8,7 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Ensure Conventional Commits
-        uses: ohpensource/platform-cicd/actions/git/ensure-conventional-commits@8ab4546a8adab2138e3c5389f55cd969cd091e68
+        uses: ohpensource/platform-cicd/actions/git/ensure-conventional-commits/ensure-conventional-commits@8ab4546a8adab2138e3c5389f55cd969cd091e68
         with:
           base-branch: $GITHUB_BASE_REF
           pr-branch: $GITHUB_HEAD_REF
+
