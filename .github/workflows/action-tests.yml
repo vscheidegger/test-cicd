@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: ensure-conventional-commits
-        uses: ohpensource/platform-cicd/actions/git/ensure-conventional-commits@8ab4546a8adab2138e3c5389f55cd969cd091e68
+        uses: ohpensource/platform-cicd/actions/git/ensure-conventional-commits@92364603b2991b3fed7ed1c311bae410bf947ee9
         with:
           base-branch: $GITHUB_BASE_REF
           pr-branch: $GITHUB_HEAD_REF
