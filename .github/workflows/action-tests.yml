@@ -1,14 +1,13 @@
 name: continuous-integration-tests
 on:
-  push
+  pull_request:
+    branches: ["main"]
 
 jobs:
   check-conventional-commits:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Path lister action
-        uses: Rishabh510/Path-lister-action@1.0
       - name: ensure-conventional-commits
         uses: ohpensource/platform-cicd/actions/git/ensure-conventional-commits@8ab4546a8adab2138e3c5389f55cd969cd091e68
         with:
